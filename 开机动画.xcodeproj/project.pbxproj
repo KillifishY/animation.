@@ -14,6 +14,12 @@
 		8BB9D3CF1D178A420039F746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9D3CD1D178A420039F746 /* LaunchScreen.storyboard */; };
 		8BB9D3DA1D178A430039F746 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3D91D178A430039F746 /* ____Tests.swift */; };
 		8BB9D3E51D178A430039F746 /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3E41D178A430039F746 /* ____UITests.swift */; };
+		8BB9D3F31D178A910039F746 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3F21D178A910039F746 /* AnimationView.swift */; };
+		8BB9D3F71D178CA90039F746 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3F61D178CA90039F746 /* CircleLayer.swift */; };
+		8BB9D3F91D178DFB0039F746 /* Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3F81D178DFB0039F746 /* Extantion.swift */; };
+		8BB9D3FB1D179E940039F746 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3FA1D179E940039F746 /* TriangleLayer.swift */; };
+		8BB9D3FD1D17BCAA0039F746 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3FC1D17BCAA0039F746 /* RectangleLayer.swift */; };
+		8BB9D3FF1D17BCBD0039F746 /* waveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9D3FE1D17BCBD0039F746 /* waveLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		8BB9D3E01D178A430039F746 /* 开机动画UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "开机动画UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB9D3E41D178A430039F746 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		8BB9D3E61D178A430039F746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB9D3F21D178A910039F746 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		8BB9D3F61D178CA90039F746 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
+		8BB9D3F81D178DFB0039F746 /* Extantion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extantion.swift; sourceTree = "<group>"; };
+		8BB9D3FA1D179E940039F746 /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
+		8BB9D3FC1D17BCAA0039F746 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		8BB9D3FE1D17BCBD0039F746 /* waveLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = waveLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,14 @@
 		8BB9D3C31D178A420039F746 /* 开机动画 */ = {
 			isa = PBXGroup;
 			children = (
+				8BB9D3F41D178C7E0039F746 /* Animation */,
 				8BB9D3C41D178A420039F746 /* AppDelegate.swift */,
 				8BB9D3C61D178A420039F746 /* ViewController.swift */,
 				8BB9D3C81D178A420039F746 /* Main.storyboard */,
 				8BB9D3CB1D178A420039F746 /* Assets.xcassets */,
 				8BB9D3CD1D178A420039F746 /* LaunchScreen.storyboard */,
 				8BB9D3D01D178A420039F746 /* Info.plist */,
+				8BB9D3F81D178DFB0039F746 /* Extantion.swift */,
 			);
 			path = "开机动画";
 			sourceTree = "<group>";
@@ -123,6 +137,26 @@
 				8BB9D3E61D178A430039F746 /* Info.plist */,
 			);
 			path = "开机动画UITests";
+			sourceTree = "<group>";
+		};
+		8BB9D3F41D178C7E0039F746 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8BB9D3F51D178C910039F746 /* Layer */,
+				8BB9D3F21D178A910039F746 /* AnimationView.swift */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		8BB9D3F51D178C910039F746 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8BB9D3F61D178CA90039F746 /* CircleLayer.swift */,
+				8BB9D3FA1D179E940039F746 /* TriangleLayer.swift */,
+				8BB9D3FC1D17BCAA0039F746 /* RectangleLayer.swift */,
+				8BB9D3FE1D17BCBD0039F746 /* waveLayer.swift */,
+			);
+			name = Layer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB9D3F31D178A910039F746 /* AnimationView.swift in Sources */,
 				8BB9D3C71D178A420039F746 /* ViewController.swift in Sources */,
+				8BB9D3FF1D17BCBD0039F746 /* waveLayer.swift in Sources */,
+				8BB9D3FD1D17BCAA0039F746 /* RectangleLayer.swift in Sources */,
 				8BB9D3C51D178A420039F746 /* AppDelegate.swift in Sources */,
+				8BB9D3FB1D179E940039F746 /* TriangleLayer.swift in Sources */,
+				8BB9D3F91D178DFB0039F746 /* Extantion.swift in Sources */,
+				8BB9D3F71D178CA90039F746 /* CircleLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
